@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+/* .wrapper {
+
+} */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* global message  */
+.global-message{
+    background: rgb(6, 6, 167);
+    color: white;
+    line-height: 32px;
+}
+
+.gbl-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    background: blue;
+    color: whitesmoke;
+    font-size: 21px;
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .menu ul either way is fine  */
+
+.menu > ul{
+    list-style: none;
+    display: flex;
+    width: auto;
+
+}
+.menu ul li{
+    margin-left: 10px;
+}
+/* hero section  */
+.hero{
+    min-height: 80vh;
+    background: url(images/fewa.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+    background: rgba(167, 146, 146, 0.54);
+    width: 450px;
+    color: whitesmoke;
+    backdrop-filter: blur (2px);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px rgb(91, 85, 85);
+
+}
+.main{
+    margin-top: 32px;
+    display: flex;
+}
+.main-content {
+    width: 66%;
+    margin-right: 1rem;
+}
+article{
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.art-image{
+    width: 200px;
+    margin-right: 1rem;
+}
+/* .art-content button{
+    margin-right: auto;
+    display: flex;
+} */
+
+.buttom{
+    display: flex;
+    justify-content: flex-end;
+}
+.side-links{
+/* background: blue; */
+width: 33%;
+}
+
+.read-by-country{
+    background: rgba(113, 166, 7, 0.538);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+}
+.read-by-date{
+    background: rgba(81, 117, 8, 0.482);
+
+}
+/* footer section  */
+footer{
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* recc section  */
+.recc{
+    background: linear-gradient(to right, green, yellow);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.card-list{
+    display: flex;
+    justify-content: space-between;
+}
+.card-list > div{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    background: white;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.903);
+    min-height: 300px;
+    margin: 10px 10px;
+}
+.card img{
+    border-radius: 5px 5px 0 0;
+}
+.card button{
+    width: 100%;
+    background: orangered;
+    font-size: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.card button:hover{
+    cursor: pointer;
+    background: rgba(91, 53, 53, 0.115);
+}
+
+/* subcription  */
+.subscription {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    flex-direction: column;
+}
+
+
+/* media query */
+@media (max-width:768px){
+    .main{
+        /* margin-top: 32px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .side-links{
+        display: flex;
+        width: 100%;
+    }
+    .side-links > div {
+
+        min-width: 50%;
+        margin: 5px;
+    }
+
+    .card-list {
+        /* width: 50%; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:550px){
+
+    .card-list > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        flex-direction: column;
+    }
+    .side-links{
+        flex-direction: column;
+    }
+}
+@media (max-width:768px){
+
+}
